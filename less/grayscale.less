@@ -4,9 +4,11 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: white;
-    background-color: black;
+    font-family: 'Noto Sans', sans-serif;
+    color: #656972;
+    font-size: 16px;
+    background-color: white;
+    overflow-x: hidden;
 }
 
 html {
@@ -21,15 +23,24 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
+    color: #323232;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+h2:after {
+    color: #e64949;
+    content: ".";
+    font-size: 34px;
 }
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    color: #888;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
     line-height: 1.5;
     @media(min-width:768px) {
         margin: 0 0 35px;
@@ -73,6 +84,9 @@ a {
         font-weight: 700;
         &:focus {
             outline: none;
+        }
+        img {
+          width: 175px;
         }
     }
     a {
@@ -118,6 +132,9 @@ a {
             padding: 0;
             background: black;
             border-bottom: 1px solid fade(white, 30%);
+            img {
+              width: 150px;
+            }
         }
     }
 }
@@ -129,7 +146,6 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -158,7 +174,24 @@ a {
         }
     }
 }
-
+#video-background {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  opacity: .8;
+}
+h1.brand-heading {
+  margin-top: 125px;
+  text-shadow: 2px 2px #000;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 .btn-circle {
     width: 70px;
     height: 70px;
@@ -235,19 +268,75 @@ a {
 .content-section {
     padding-top: 100px;
 }
-
+#dkan-hosting {
+  background-color: #f7f7f7;
+  padding-top: 50px;
+  .container {
+    text-align: left;
+  }
+}
+.services-section {
+}
+#services {
+  padding-top: 75px;
+}
+img#dkan-logo {
+    width: 200px;
+    padding-bottom: 60px;
+}
+img#data-viz {
+  width: 210px;
+  padding-bottom: 25px;
+}
+img#drupal-services {
+  width: 320px;
+  padding-bottom: 14px;
+}
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: white;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: black;
+    color: #888;
+    position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    li {
+      padding: 10px 0;
+    }
+    .arrow-icon {
+      padding-right: 10px;
+    }
 }
 
+@media (min-width: 992px){
+.features-figure-wrapper {
+    width: 50%;
+    max-width: 600px;
+    top: 16px;
+    right: 0px;
+}}
+@media (min-width: 768px){
+.features-figure-wrapper {
+    max-width: 60%;
+    top: 15px;
+    right: -90px;
+}}
+.features-figure-wrapper {
+    overflow: hidden;
+    position: absolute;
+    right: -120px;
+    top: 10px;
+    max-width: 900px;
+}
+@media (min-width: 1200px) {
+.features-figure-wrapper {
+    width: 60%;
+    max-width: 800px;
+    top: 20px;
+    right: -120px;
+}
+}
 #map {
     width: 100%;
     height: 200px;
@@ -256,11 +345,11 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
-        padding: 100px 0;
+        padding: 0;
     }
 
     #map {
