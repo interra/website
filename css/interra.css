@@ -29,6 +29,11 @@ h6 {
   font-weight: 600;
   letter-spacing: 4px;
 }
+h4,
+h5,
+h6 {
+  text-transform: none;
+}
 h2:after {
   color: #e64949;
   content: ".";
@@ -402,4 +407,59 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+.page-container {
+  margin-top: 110px;
+}
+.expertise p {
+  color: #555;
+}
+.expertise {
+  padding: 25px 25px 1px 25px;
+  margin: 0px 20px 60px 0px;
+  background-color: #eaeaea;
+  /* border: 1px solid #999; */
+  color: #000;
+}
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+a.portfolio-link {
+  display: block;
+  height: 165px;
+  overflow: hidden;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #999;
+}
+#portfolio h3 {
+  padding-top: 30px;
+}
+.portfolio-img-holder {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  margin-right: 25px;
+}
+#tools {
+  clear: both;
+  margin-bottom: 40px;
+}
+#tools img {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  max-height: 95px;
+}
+#tools img:hover {
+  filter: none;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
 }
