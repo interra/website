@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% if page.img %}
+  <figure>
+      <img src="{{site.baseurl}}/img/{{page.img.large}}" alt="{{ include.alt }}" />
+      <figcaption>{{ page.img.caption }}</figcaption>
+  </figure>
+{% endif %}
+
+<div class="container page-container">
+  {{ content }}
+</div>

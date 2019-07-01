@@ -19,7 +19,6 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Interra Open Data, DKAN, CKAN, Drupal, Data visualization, React Dashboard experts.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: anotherc
 github_username:  interra
 
